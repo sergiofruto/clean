@@ -1,0 +1,31 @@
+/* Custom CSS
+-------------------------*/
+a.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dir-rtl a.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+body{
+    padding-top: 0px;
+    background-color: #233d6c;
+}
+
+
+#page.container-fluid{
+    max-width: 1178px;
+    background-color: white;
+}
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]
