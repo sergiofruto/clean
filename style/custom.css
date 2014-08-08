@@ -16,16 +16,24 @@ a.logo {
     float: right;
 }
 
+/* Start of the custom css for InfoPork*/
+
 body{
     padding-top: 0px;
     background-color: #233d6c;
 }
 
-
-#page.container-fluid{
+#page.container-fluid{   
     max-width: 1178px;
     background-color: white;
 }
+
+.social-bar{
+    height: 28px;
+    background-color: #233d6c;
+}
+
+
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
