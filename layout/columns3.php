@@ -51,15 +51,20 @@ echo $OUTPUT->doctype() ?>
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
 <div id="page" class="container-fluid">
-
     <header id="page-header" class="clearfix">
-        <?php echo $html->heading; ?>
+    <div class="top-login">
+        <ul class="unlist">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Mi perfil</a></li>
+        </ul>
+    </div>
         <div id="page-navbar" class="clearfix">
             <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
             <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
         </div>
         <div id="course-header">
             <?php echo $OUTPUT->course_header(); ?>
+            <img src="theme/clean/img/ip-header-logo.png">
         </div>
     </header>
 

@@ -28,6 +28,71 @@ body{
     background-color: white;
 }
 
+
+/*header styles*/
+
+#page-header{
+    min-height: 178px;
+    background: #274879 url(clean/img/ip-header-bg.png) center center no-repeat;
+}
+
+#page-header ul.unlist{
+    padding: 9px 0;
+    border-bottom: 1px dashed #9eb6df;
+}
+
+#page-header ul.unlist li{
+    display: inline
+}
+
+#page-header ul.unlist li a{
+    font-family: Arial, Sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #9eb6df;
+}
+
+#page-header #course-header img{
+    padding: 43px 0 0 43px ; 
+}
+
+#page-navbar{
+    display: none;
+}
+
+/* end of header */
+
+/*Main Content Styles*/
+
+#page-content{
+    padding-top: 2%;
+}
+
+#page-content aside .block{
+    padding: 0 0;
+    border-radius: 7px 7px 0px 0px;
+    overflow: hidden;
+    border: none;
+}
+
+#page-content aside .block .header{
+    background-color: #233d6c;  
+}
+
+#page-content aside .block .header h2{
+    font-family: Arial, Sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #abc1e7;
+    text-transform: none;
+    text-shadow: none;
+}
+
+#page-content aside .block .content{
+    border: 1px solid #ccd7e9;
+    border-top: none;
+}
+
 .social-bar{
     height: 28px;
     background-color: #233d6c;
