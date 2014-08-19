@@ -141,6 +141,7 @@ body{
 
 #region-bs-main-and-pre .center-main-block ul li.date-block{
     background-color: #0d7099;
+    box-shadow: 1px 1px 4px 1px #535353;
 }
 
 #region-bs-main-and-pre .center-main-block ul li.date-block .content{
