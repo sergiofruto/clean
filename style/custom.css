@@ -18,13 +18,20 @@ a.logo {
 
 /* Start of the custom css for InfoPork*/
 
+/*Grid with changes*/
+.row-fluid [class*="span"]{ margin-left: 1%;}
+.row-fluid .span3{ width: 19.20%; }
+.row-fluid .span6{ width: 59.5%;}
+
+
+
 body{
     padding-top: 0px;
     background-color: #233d6c;
 }
 
 #page.container-fluid{   
-    max-width: 1178px;
+    max-width: 1158px;
     background-color: white;
 }
 
@@ -88,16 +95,60 @@ body{
     text-shadow: none;
 }
 
-#page-content aside .block .content{
+#page-content aside .block .conten{t
     border: 1px solid #ccd7e9;
     border-top: none;
 }
 
-.social-bar{
+#region-bs-main-and-pre .social-bar{
     height: 28px;
     background-color: #233d6c;
 }
 
+#region-bs-main-and-pre .center-main-block{
+    width: 100%;
+    margin-left: 0px;
+}
+
+#region-bs-main-and-pre .center-main-block ul{
+    width: 100%;
+    float: left;
+    list-style: none;
+    margin: 0;
+}
+
+#region-bs-main-and-pre .center-main-block ul li{
+    width: 23.75%;
+    height: 246px;
+    float: left;
+}
+
+#region-bs-main-and-pre .center-main-block ul li.first-block{
+    width: 28.75%;
+    background-color: #5372a1;
+}
+
+#region-bs-main-and-pre .center-main-block ul li.first-block .head{
+    width: 100%;
+    height: 75px;    
+    background-color: #365281;
+}
+
+#region-bs-main-and-pre .center-main-block ul li.first-block .head img{
+    margin: 0 auto;
+    display: block;
+}
+
+#region-bs-main-and-pre .center-main-block ul li.date-block{
+    background-color: #0d7099;
+}
+
+#region-bs-main-and-pre .center-main-block ul li.date-block .content{
+    width: 150px;
+    height: 182px;
+    margin: 56px 0 0 13px;
+    background-color: #ffffff;
+}
 
 /* Custom CSS Settings
 -------------------------*/

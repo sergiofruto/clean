@@ -73,7 +73,44 @@ echo $OUTPUT->doctype() ?>
             <div id="<?php echo $regionbsid ?>" class="span6">
                 <div class="row-fluid">
                     <div class="span12 social-bar"></div>
-                    <section id="region-main" class="span8 pull-right">
+                    <div class="span12 center-main-block">
+                        <ul>
+                            <li class="first-block">
+                                <div class="head">
+                                    <img src="theme/clean/img/ip-small-logo.png">
+                                </div>
+                                <div class="content"></div>
+                            </li>
+                            <li class="date-block">
+                                <div class="content">
+                                    <h2></h2>
+                                    <div class="course-info">
+                                        <p></p>
+                                        <h1></h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="date-block">
+                                <div class="content">
+                                    <h2></h2>
+                                    <div class="course-info">
+                                        <p></p>
+                                        <h1></h1>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="date-block">
+                                <div class="content">
+                                    <h2></h2>
+                                    <div class="course-info">
+                                        <p></p>
+                                        <h1></h1>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <section id="region-main" class="span12">
                         <?php
                         echo $OUTPUT->course_content_header();
                         echo $OUTPUT->main_content();
