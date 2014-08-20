@@ -82,29 +82,29 @@ echo $OUTPUT->doctype() ?>
                                 <div class="content"></div>
                             </li>
                             <li class="date-block">
+                                <h2>JUNIO 2014</h2>
                                 <div class="content">
-                                    <h2>JUNIO 2014</h2>
                                     <div class="course-info">
-                                        <p></p>
-                                        <h1></h1>
+                                        <p>Curso de Actualización en:</p>
+                                        <h1>Titulo del Curso</h1>
                                     </div>
                                 </div>
                             </li>
                             <li class="date-block">
+                                <h2>JULIO 2014</h2>
                                 <div class="content">
-                                    <h2>JULIO 2014</h2>
                                     <div class="course-info">
-                                        <p></p>
-                                        <h1></h1>
+                                        <p>Curso de Actualización en:</p>
+                                        <h1>Titulo del Curso</h1>
                                     </div>
                                 </div>
                             </li>
                             <li class="date-block">
+                                <h2>AGOSTO 2014</h2>
                                 <div class="content">
-                                    <h2>AGOSTO 2014</h2>
                                     <div class="course-info">
-                                        <p></p>
-                                        <h1></h1>
+                                        <p>Curso de Actualización en:</p>
+                                        <h1>Titulo del Curso</h1>
                                     </div>
                                 </div>
                             </li>

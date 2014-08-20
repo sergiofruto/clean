@@ -25,6 +25,16 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'narrow';
+    src: url('clean/fonts/narrow.eot');
+    src: url('clean/fonts/narrow.eot') format('embedded-opentype'),
+         url('clean/fonts/narrow.woff') format('woff'),
+         url('clean/fonts/narrow.ttf') format('truetype'),
+         url('clean/fonts/narrow.svg#HelveticaNarrowRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;     
+}
 
 /* end of font-face*/
 
@@ -183,9 +193,11 @@ body{
 #region-bs-main-and-pre .center-main-block ul li.first-block .head img{
     margin: 0 auto;
     display: block;
+    padding-top: 24px;
 }
 
 #region-bs-main-and-pre .center-main-block ul li.date-block{
+    position: relative;
     background-color: #0d7099;
     -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.44);
        -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.44); ;
@@ -193,11 +205,41 @@ body{
 
 }
 
+#region-bs-main-and-pre .center-main-block ul li.date-block h2{
+    font-family: 'bebas_neue';
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    line-height: 6px;
+    margin: 45px 0 0 23px;
+}
+
 #region-bs-main-and-pre .center-main-block ul li.date-block .content{
     width: 150px;
     height: 182px;
-    margin: 56px 0 0 13px;
+    margin: 0px 0 0 13px;
     background-color: #ffffff;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+#region-bs-main-and-pre .center-main-block ul li.date-block .content .course-info{
+    padding: 0 0 0 10px;
+}
+
+#region-bs-main-and-pre .center-main-block ul li.date-block .content p{
+    font-family: 'narrow';
+    color: #808181;
+}
+
+#region-bs-main-and-pre .center-main-block ul li.date-block .content h1{
+    font-family: 'narrow';
+    font-size: 29px;
+    font-weight: 500;
+    color: #808181;
+    line-height: 1;
 }
 
 #region-bs-main-and-pre .center-bottom-block{
@@ -255,6 +297,7 @@ body{
     box-sizing: border-box;
     background-color: #a6c149;
     border-radius: 3px;
+    font-family: 'narrow';
 }
 
 #region-bs-main-and-pre .center-bottom-block .forum-block{
