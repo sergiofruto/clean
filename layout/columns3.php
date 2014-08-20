@@ -83,7 +83,7 @@ echo $OUTPUT->doctype() ?>
                             </li>
                             <li class="date-block">
                                 <div class="content">
-                                    <h2></h2>
+                                    <h2>JUNIO 2014</h2>
                                     <div class="course-info">
                                         <p></p>
                                         <h1></h1>
@@ -92,7 +92,7 @@ echo $OUTPUT->doctype() ?>
                             </li>
                             <li class="date-block">
                                 <div class="content">
-                                    <h2></h2>
+                                    <h2>JULIO 2014</h2>
                                     <div class="course-info">
                                         <p></p>
                                         <h1></h1>
@@ -101,7 +101,7 @@ echo $OUTPUT->doctype() ?>
                             </li>
                             <li class="date-block">
                                 <div class="content">
-                                    <h2></h2>
+                                    <h2>AGOSTO 2014</h2>
                                     <div class="course-info">
                                         <p></p>
                                         <h1></h1>
@@ -109,6 +109,27 @@ echo $OUTPUT->doctype() ?>
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                    <div class="span12 center-bottom-block">
+                        <ul class="conf-block">
+                            <li>Audioconferencias en Vivo 2014</li>
+                            <li class="intro"><p>Cada mes un nuevo módulo temático, Video Conferencia en Vivo Acceso libre y gratuito con cupo restringido.</p></li>
+                            <li class="bottom">
+                                <div class="content">
+                                    <ul>    
+                                        <li></li>
+                                    </ul>
+                                    <div class="links-container">
+                                        <a href="">VER PROGRAMA</a>
+                                        <a href="">IR A LA SALA VIRTUAL</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="forum-block">
+                            <h3>INGRESE <br />AL FORO</h3>
+                            <a href="">CLICK AQUI</a>
+                        </div>
                     </div>
                     <section id="region-main" class="span12">
                         <?php

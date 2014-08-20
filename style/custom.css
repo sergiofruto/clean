@@ -1,5 +1,33 @@
 /* Custom CSS
 -------------------------*/
+
+/* font-face */
+@font-face {
+    font-family: 'bebas_neue';
+    src: url('clean/fonts/bebasneue-webfont.eot');
+    src: url('clean/fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clean/fonts/bebasneue-webfont.woff') format('woff'),
+         url('clean/fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('clean/fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'league_gothic';
+    src: url('clean/fonts/leaguegothic-regular-webfont.eot');
+    src: url('clean/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clean/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('clean/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('clean/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* end of font-face*/
+
 a.logo {
     background: url([[setting:logo]]) no-repeat 0 0;
     display: block;
@@ -23,7 +51,7 @@ a.logo {
 .row-fluid .span3{ width: 19.20%; }
 .row-fluid .span6{ width: 59.5%;}
 
-
+/* general rules*/
 
 body{
     padding-top: 0px;
@@ -44,12 +72,28 @@ body{
 }
 
 #page-header ul.unlist{
-    padding: 9px 0;
+    padding: 9px 0 9px 25px;
     border-bottom: 1px dashed #9eb6df;
 }
 
 #page-header ul.unlist li{
-    display: inline
+    display: inline;
+    position: relative;
+    padding-right: 35px;
+}
+
+#page-header ul.unlist li a:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 14px;
+    top: 1px;
+    left: 1px;
+    background: url(clean/img/top-log-icons.png) 0 -22px no-repeat;
+}
+
+#page-header ul.unlist li:first-child a:before{
+    background-position: 0 0;
 }
 
 #page-header ul.unlist li a{
@@ -57,6 +101,7 @@ body{
     font-size: 13px;
     font-weight: bold;
     color: #9eb6df;
+    padding-left: 23px;
 }
 
 #page-header #course-header img{
@@ -67,7 +112,7 @@ body{
     display: none;
 }
 
-/* end of header */
+/* End of header */
 
 /*Main Content Styles*/
 
@@ -95,7 +140,7 @@ body{
     text-shadow: none;
 }
 
-#page-content aside .block .conten{t
+#page-content aside .block .conten{
     border: 1px solid #ccd7e9;
     border-top: none;
 }
@@ -108,6 +153,7 @@ body{
 #region-bs-main-and-pre .center-main-block{
     width: 100%;
     margin-left: 0px;
+    padding-bottom: 19px;
 }
 
 #region-bs-main-and-pre .center-main-block ul{
@@ -117,7 +163,7 @@ body{
     margin: 0;
 }
 
-#region-bs-main-and-pre .center-main-block ul li{
+#region-bs-main-and-pre .center-main-block > ul li{
     width: 23.75%;
     height: 246px;
     float: left;
@@ -141,7 +187,10 @@ body{
 
 #region-bs-main-and-pre .center-main-block ul li.date-block{
     background-color: #0d7099;
-    box-shadow: 1px 1px 4px 1px #535353;
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.44);
+       -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.44); ;
+            box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.44);
+
 }
 
 #region-bs-main-and-pre .center-main-block ul li.date-block .content{
@@ -151,6 +200,102 @@ body{
     background-color: #ffffff;
 }
 
+#region-bs-main-and-pre .center-bottom-block{
+    width: 100%;
+    margin-left: 0px; 
+    border-radius: 3px;
+}
+
+#region-bs-main-and-pre .center-bottom-block > ul{
+    width: 68.20%;
+    height: 264px;
+    float: left;
+    margin: 0;
+    list-style: none;
+    background-color: #d3dce2;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li:first-child{
+    height: 93px;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li.intro{
+    height: 72px;
+    background-color: #5372a1;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li.bottom{
+    height: 100px;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li.bottom .content{
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 3.5%;
+    box-sizing: border-box;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li.bottom .content ul{
+    width: 66%;
+    float: left;
+    margin: 0;
+    list-style: none;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li.bottom .content .links-container{
+    width: 34%;
+    float: left;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li.bottom .content .links-container a{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #a6c149;
+    border-radius: 3px;
+}
+
+#region-bs-main-and-pre .center-bottom-block .forum-block{
+    width: 31.80%;
+    height: 264px;
+    float: left;
+    background-color: #48648d;
+    background: url(clean/img/forum-bg.jpg) 0 0 no-repeat;
+    font-family: 'league_gothic';
+    color: #ffffff;
+}
+
+#region-bs-main-and-pre .center-bottom-block .forum-block h3{
+    width: 76%;
+    margin: 0 auto 44px auto;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    background-color: rgba(0, 48, 119, 0.68);
+    line-height: 1;
+    font-size: 35px;
+    padding: 40px 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+#region-bs-main-and-pre .center-bottom-block .forum-block a{
+    width: 76%;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(0, 48, 119, 0.68);
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 13px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+#region-bs-main-and-pre .center-bottom-block .forum-block a:hover{
+    text-decoration: none;
+    background-color: rgba(0, 48, 119, 0.86);
+}
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
