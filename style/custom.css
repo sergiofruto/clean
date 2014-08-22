@@ -36,6 +36,26 @@
     font-style: normal;     
 }
 
+@font-face {
+    font-family: 'helvetica_neue';
+    src: url('clean/fonts/neue-ultralight-webfont.eot');
+    src: url('clean/fonts/neue-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clean/fonts/neue-ultralight-webfont.woff') format('woff'),
+         url('clean/fonts/neue-ultralight-webfont.ttf') format('truetype'),
+         url('clean/fonts/neue-ultralight-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HelveticaRegular';
+    src: url('clean/fonts/helvetica.eot');
+    src: url('clean/fonts/helvetica.eot') format('embedded-opentype'),
+         url('clean/fonts/helvetica.woff') format('woff'),
+         url('clean/fonts/helvetica.ttf') format('truetype'),
+         url('clean/fonts/helvetica.svg#HelveticaRegular') format('svg');
+}
+
 /* end of font-face*/
 
 a.logo {
@@ -99,7 +119,7 @@ body{
     height: 14px;
     top: 1px;
     left: 1px;
-    background: url(clean/img/top-log-icons.png) 0 -22px no-repeat;
+    background: url(clean/img/ip-top-log-icons.png) 0 -22px no-repeat;
 }
 
 #page-header ul.unlist li:first-child a:before{
@@ -132,7 +152,7 @@ body{
 
 #page-content aside .block{
     padding: 0 0;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 6px 6px 0px 0px;
     overflow: hidden;
     border: none;
 }
@@ -148,6 +168,18 @@ body{
     color: #abc1e7;
     text-transform: none;
     text-shadow: none;
+    position: relative;
+    padding: 3px 15px 3px 30px;
+}
+
+#page-content aside .block .header h2:before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    width: 14px;
+    height: 11px;
+    background: url(clean/img/ip-xs-icon.png);
 }
 
 #page-content aside .block .conten{
@@ -199,9 +231,9 @@ body{
 #region-bs-main-and-pre .center-main-block ul li.date-block{
     position: relative;
     background-color: #0d7099;
-    -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.44);
-       -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.44); ;
-            box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: -1px 3px 7px 1px rgba(97, 97, 97, 0.28);
+       -moz-box-shadow: -1px 3px 7px 1px rgba(97, 97, 97, 0.28);
+            box-shadow: -1px 3px 7px 1px rgba(97, 97, 97, 0.28);
 
 }
 
@@ -240,6 +272,7 @@ body{
     font-weight: 500;
     color: #808181;
     line-height: 1;
+    margin-top: 5px;
 }
 
 #region-bs-main-and-pre .center-bottom-block{
@@ -248,7 +281,7 @@ body{
     border-radius: 3px;
 }
 
-#region-bs-main-and-pre .center-bottom-block > ul{
+#region-bs-main-and-pre .center-bottom-block > ul.conf-block{
     width: 68.20%;
     height: 264px;
     float: left;
@@ -257,8 +290,36 @@ body{
     background-color: #d3dce2;
 }
 
-#region-bs-main-and-pre .center-bottom-block ul li:first-child{
+#region-bs-main-and-pre .center-bottom-block > ul.conf-block > li{
+    width: 100%;
+    float: left;
+} 
+
+#region-bs-main-and-pre .center-bottom-block ul.conf-block > li:first-child{
     height: 93px;
+    background: url(clean/img/ip-logo-mid.png) 95% 28px no-repeat;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li:first-child h2{
+    font-family: "helvetica_neue", Helvetica, Arial, "Lucida Grande", sans-serif;                
+    font-weight: 300;
+    font-weight: normal;
+    font-size: 23px;
+    color: #233d6c;
+    padding: 24px 0 0 93px;
+    margin: 0;
+    line-height: 1;
+    position: relative;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul li:first-child h2:before{
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 23px;
+    width: 56px;
+    height: 56px;
+    background: url(clean/img/ip-mic.png) 0 0 no-repeat;
 }
 
 #region-bs-main-and-pre .center-bottom-block ul li.intro{
@@ -266,38 +327,72 @@ body{
     background-color: #5372a1;
 }
 
-#region-bs-main-and-pre .center-bottom-block ul li.bottom{
+#region-bs-main-and-pre .center-bottom-block ul li.intro p{
+    font-family: 'HelveticaRegular', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #ffffff;
+    width: 90%;
+    display: block;
+    margin: 17px auto 0 auto;
+}
+
+#region-bs-main-and-pre .center-bottom-block > ul li.bottom{
+    width: 100%;
     height: 100px;
 }
 
-#region-bs-main-and-pre .center-bottom-block ul li.bottom .content{
+#region-bs-main-and-pre .center-bottom-block > ul li.bottom .content{
     width: 100%;
     padding-left: 7%;
     padding-right: 3.5%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
-#region-bs-main-and-pre .center-bottom-block ul li.bottom .content ul{
+#region-bs-main-and-pre .center-bottom-block > ul li.bottom .content ul li{
+    line-height: 1;
+    font-family: 'narrow';
+}
+
+#region-bs-main-and-pre .center-bottom-block > ul li.bottom .content ul{
     width: 66%;
     float: left;
     margin: 0;
     list-style: none;
 }
 
-#region-bs-main-and-pre .center-bottom-block ul li.bottom .content .links-container{
-    width: 34%;
-    float: left;
+#region-bs-main-and-pre .center-bottom-block > ul li.bottom .content ul li span{
+    font-size: 11px;
+    color: white;
+    padding-right: 8px;
 }
 
-#region-bs-main-and-pre .center-bottom-block ul li.bottom .content .links-container a{
+#region-bs-main-and-pre .center-bottom-block > ul li.bottom .content ul li p{
+    display: inline-block;
+    font-size: 11px;
+    margin: 0;
+    color: #3d6077;
+}
+
+#region-bs-main-and-pre .center-bottom-block > ul li.bottom .content .links-container{
+    width: 34%;
+    float: left;
+    margin-top: 8px;
+}
+
+#region-bs-main-and-pre .center-bottom-block > ul li.bottom .content .links-container a{
     width: 100%;
     display: block;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 0 auto 5px auto;
+    padding: 9px;
     box-sizing: border-box;
     background-color: #a6c149;
     border-radius: 3px;
     font-family: 'narrow';
+    color: #fff;
+    text-align: center;
+    border: 1px solid #9ba3a4;
 }
 
 #region-bs-main-and-pre .center-bottom-block .forum-block{
@@ -305,7 +400,7 @@ body{
     height: 264px;
     float: left;
     background-color: #48648d;
-    background: url(clean/img/forum-bg.jpg) 0 0 no-repeat;
+    background: url(clean/img/ip-forum-bg.jpg) 0 0 no-repeat;
     font-family: 'league_gothic';
     color: #ffffff;
 }

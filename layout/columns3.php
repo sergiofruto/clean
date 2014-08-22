@@ -41,6 +41,7 @@ echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -112,12 +113,18 @@ echo $OUTPUT->doctype() ?>
                     </div>
                     <div class="span12 center-bottom-block">
                         <ul class="conf-block">
-                            <li>Audioconferencias en Vivo 2014</li>
-                            <li class="intro"><p>Cada mes un nuevo módulo temático, Video Conferencia en Vivo Acceso libre y gratuito con cupo restringido.</p></li>
+                            <li><h2>Audioconferencias<br />en Vivo 2014</h2></li>
+                            <li class="intro"><p>Cada mes un nuevo módulo temático, Video Conferencia en Vivo. <br /> 
+                                Acceso libre y gratuito con cupo restringido.</p></li>
                             <li class="bottom">
                                 <div class="content">
                                     <ul>    
-                                        <li></li>
+                                        <li>Horario de las Transmisiones</li>
+                                        <li><span>22:00 hs.</span><p>Argentina  |  Brasil  |  Uruguay</p></li>
+                                        <li><span>21:00 hs.</span><p>Chile  |  Paraguay</p></li>
+                                        <li><span>20:30 hs.</span><p>Venezuela</p></li>
+                                        <li><span>20:00 hs.</span><p>Colombia  |  Ecuador  |  Mexico  | Perú</p></li>
+                                        <li><span>19:00 hs.</span><p>Guatemala  |  Costa Rica  |  El Salvador  | Honduras</p></li>
                                     </ul>
                                     <div class="links-container">
                                         <a href="">VER PROGRAMA</a>
