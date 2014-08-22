@@ -222,6 +222,11 @@ body{
     background-color: #365281;
 }
 
+#region-bs-main-and-pre .center-main-block ul li.first-block .content{
+    height: 172px;
+    background: url(clean/img/ip-laptop-logo.jpg) 0 0 no-repeat;
+}
+
 #region-bs-main-and-pre .center-main-block ul li.first-block .head img{
     margin: 0 auto;
     display: block;
@@ -434,6 +439,28 @@ body{
     text-decoration: none;
     background-color: rgba(0, 48, 119, 0.86);
 }
+
+/* Footer Styles */
+#page-footer{
+   background: #50658b url(clean/img/ip-header-logo.png) 26px 20px no-repeat;
+    background-size: 108px 27px;
+    padding: 20px 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#page-footer .logininfo{
+    float: left;
+    padding-left: 168px;
+    color: #d9d9d9;
+    font-size: 14px;
+}
+
+#page-footer .logininfo a{
+    color: #ffffff;
+}
+
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
