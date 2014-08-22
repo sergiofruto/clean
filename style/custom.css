@@ -303,6 +303,18 @@ body{
 #region-bs-main-and-pre .center-bottom-block ul.conf-block > li:first-child{
     height: 93px;
     background: url(clean/img/ip-logo-mid.png) 95% 28px no-repeat;
+    position: relative;
+}
+
+#region-bs-main-and-pre .center-bottom-block ul.conf-block > li:first-child:after {
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 12px 0 11px;
+    border-color: #d3dce2 transparent transparent transparent;
+    content: " ";
 }
 
 #region-bs-main-and-pre .center-bottom-block ul li:first-child h2{
